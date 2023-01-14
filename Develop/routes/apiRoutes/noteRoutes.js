@@ -18,8 +18,6 @@ router.get("/notes", (_, res) => {
 });
 
 router.post("/notes", (req, res) => {
-  console.log("request:", JSON.stringify(req.body));
-
   createNewNote(req.body, notes);
 });
 
